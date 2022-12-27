@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="turtlebot3_ball_following" type="image_processing.py" name="camera_driver"/>
+    <node pkg="turtlebot3_ball_following" type="tracking_driver.py" name="tracking_driver" output="screen" />
+    <node pkg="turtlebot3_ball_following" type="manipulation_driver.py" name="manipulation_driver" />
+</launch>
